@@ -7,11 +7,9 @@ class MoviesController < ApplicationController
   end
 
   def show
-  movie = Movie.find(params[:id])
-  render json: movie
-   #render json: movie.to_json(except: [:created_at, :updated_at])
-  # post = Post.find(params[:id])
-  #render json: post.to_json(only: [:title, :description, :id], include: [author: { only: [:name]}])
+    movie = Movie.find(params[:id])
+   # render json: movie
+   
   end
 
   private
